@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsi</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script type="text/javascript">
+        function ShowPage(page){
+        var Div=document.getElementById('halaman');
+            var html='';
+            if(page==1)
+            {
+                html+='<div class="container"> <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()"> <div class="form-group"> <label>Nama</label> <input type="text" name="nama" placeholder="Nama Lengkap" class="form-control" required maxlength="40" minlength="3"> </div> <div class="form-group"> <label>Email</label> <input type="email" name="email" placeholder="Email Aktif" class="form-control"> <small id="emailHelp" class="form-text text-muted">Email Akan Digunakan Untuk Mengirim Notifikasi</small> </div> <div class="form-group"></div>';
+
+                html+='<button type="button" class="btn btn-primary" onClick="ShowPage(2);">LIHAT ARTIKEL</button> </form></div>';
+            }
+
+            else if(page==2)
+            {
+
+                html+='<div class="gambar"> <div class="foto"> <img src="mandeh.jpg" width="400px" height="400px" onClick="ShowPage(3);"> <h3>WISATA PULAU MANDEH</h3> <br> <p>Klik gambar untuk baca</p> </div> <div class="foto"> <img src="masjid.jpg" width="400px" height="400px" onClick="ShowPage(4);"> <h3>MASJID RAYA SUMBAR</h3><br><p>Klik gambar untuk baca</p> </div> <div class="foto"> <img src="jamgadang.jpg" width="400px" height="400px" onClick="ShowPage(5);"> <h3>JAM GADANG BUKIT TINGGI</h3> <br> <p>Klik gambar untuk baca</p> <br></div> </div>';
+            }
+
+            else if(page==3)
+            {
+                 html+='<div class="artikel"> <div class="konten"> <div class="left"> <h1 class="atas">Wisata alam pulau mandeh Sumatera Barat</h1><small class="penulis">Liputan6. December 06, 2018</small><br><br> <img src="fmandeh.jpg" width="607px" height="360px"> <br><br><p class="penulis">Pulau mandeh menjelma sebagai salah satu destinasi yang populer dan banyak dicari dibeberapa tahun belakangan. hal ini tidak terlepas dari keindahan alam yang ditawarkannya. Bahkan Pulau Mandeh ini disebut sebagai Raja Ampat-nya Sumatera Barat.</p> <p class="penulis">Berlokasi tidak terlalu jauh dari Kota Padang, kamu bisa mengunjungi Pulau Mandeh ini lewat jalur darat. Kamu bisa melakukan berbagai kegiatan di air maupun di darat dengan berfoto di spot-spot yang memiliki pesona sangat menawan. Paket wisata Pulau Mandeh menawarkan pesona alam laut yang sangat menawan. Beberapa pulau di wisata Pulau Mandeh ini memiliki berbagai keunikan tersendiri. Kamu bisa menikmati pemandangan alam dari ketinggian dan menyeberang dari pulau ke pulau untuk menikmati alam dan pantainya dengan melakukan berbagai aktivitas menarik.</p> <h2 class="atas">Paket Wisata Pulau Mandeh Sumbar</h2> <p class="penulis">Paket wisata Pulau Mandeh Sumatera Barat makin terkenal karena semakin banyak orang yang tertarik dengan keindahannya. Tidak saah tempat ini disebut sebagai Raja Ampatnya Sumatera Barat dengan keindahannya yang tiada tara.Lokasi wisata Pulau Mandeh ini ada di Kecamatan Koto XI Tarusan, Pesisir Selatan. Berjarak sekitar 56 km dari pusat Kota Padang, kamu bisa ke lokasi wisata Pulau Mandeh ini dengan menempuh waktu sekitar 2 jam perjalanan darat. Ada beberapa pilihan jalan darat yang bisa kamu pilih dengan pemandangan yang berbeda-beda.</p><p class="penulis">Setelah sampai di Pelabuhan, kamu bisa melanjutkan perjalanan dengan kapal atau boat. Kamu bisa berangkat dari Pelabuhan Bungus, Teluk Bayur, atau dari Teluk Tarusan. Untuk jam berwisata ke Pulau Mandeh, kamu bisa datang kapan saja. Biaya masuk pun tidak ada alias gratis. Kamu hanya perlu membayar saat melakukan berbagai aktivitas seru yang ditawarkan di sana nantinya.</p><p class="penulis">Paket wisata Pulau Mandeh bisa kamu lihat di berbagai situs yang menawarkan perjalanan. Kamu tinggal memilih perjalanan seperti apa yang kamu inginkan, destinasi mana saja yang ingin dikunjungu, dan menimbang biaya paket wisata Pulau Mandeh tersebut berdasarkan waktu liburanmu.</p><br> <button type="submit" class="kembali" onClick="ShowPage(2);">Selesai & Kembali</button> </div></div>';
+
+            }
+            else if(page==4)
+            {
+                 html+='<div class="artikel"> <div class="konten"><div class="left"><h1 class="atas">Keindahan Masjid Raya Sumatera Barat</h1><small class="penulis">Sumber: Merdeka.com</small><br><br><img src="masjidraya.jpg" width="607px" height="360px"><br><br><p class="penulis">Bangunan masjid identik dengan bentuk kubah. Namun, tidak dengan masjid yang satu ini. Masjid Raya Sumatera Barat memiliki kubah bak rumah adat khas Minangkabau yaitu Rumah Gadang. Bagian atapnya memiliki empat sudut yang meruncing. Setiap sisi atapnya terlukis kaligrafi bernuansa emas yang memukau. Megah dan menakjubkan. Jika dilihat lebih detail, atap ini tak hanya berbentuk Rumah Gadang saja. Namun juga membentuk bentangan kain yang ditarik di empat sudutnya.</p><p class="penulis">Bentangan kain ini menyimbolkan kain yang digunakan untuk mengusung Hajar Aswad pada zaman Nabi Muhammad. Atap Masjid Raya Sumatera Barat memang memiliki dua makna yang mendalam yang nilai Islam dan adat Minangkabau. Masjid yang terletak di Jalan Chatib Sulaiman, Kecamatan Padang Utara, Kota Padang ini mampu menampung sekitar 20.000 jemaah yang terdiri dari 3 lantai. Lantai pertama merupakan tempat wudhu. Lantai dua menjadi lantai utama untuk salat. Lantai ketiga merupakan lantai alternatif untuk jemaah salat.<p class="penulis">Pada lantai utama, terdapat mihrab yang mengambil konsep seperti tempat batu hajar aswad di Kabah bernuansa perak. Bagian plafon di hiasi dengan tulisan Asmaul Husna yang menawan berwarna emas.Menariknya lagi, bangunan masjid ini dirancang tidak memiliki tiang pada bagian tengah ruangan. Jemaah tidak terganggu dengan tiang-tiang di tengah masjid. Suasana nyaman juga terasa saat menginjakkan kaki di karpet masjid.Karpet permadani lembut berwarna merah ini berasal dari Turki. Merupakan bantuan dari pemerintah Turki dalam proses pembangunan masjid yang menghabiskan dana Rp 350 miliar lebih ini.</p><p class="penulis">Masjid Raya Sumbar juga memiliki menara yang menjulang dengan ketinggian 85 meter. Menara tersebut hingga ketinggian 44 meter menggunakan lift sehingga pengunjung bisa menikmati pemandangan kota Padang dari ketinggian. Seluk beluk masjid ini terukir indah. Pada dinding Masjid Raya ini berbentuk ukiran Minang dengan rongga besar. Membuat sirkulasi udara lancar dan terasa sejuk di dalam meski hawa panas menyelimuti. Keistimewaan masjid ini tidak hanya pada kemegahannya saja. Pembangunan masjid ini punya proses yang unik dengan sayembara yang melibatkan 323 arsitek. Rizal Muslimin pemenang sayembara ini dengan desain masjid tahan gempa. </p><br><button type="submit" class="kembali" onClick="ShowPage(2);">Selesai & Kembali</button></div></div>';
+            }
+
+            else
+            {
+                 html+='<div class="artikel"><div class="konten"><div class="left"><h1 class="atas">Sejarah Jam Gadang di Bukittinggi Sumatera Barat</h1><small class="penulis">Nanang Sobirin. Jan 01, 2020</small><br><br><img src="fjamgadang.jpg" width="607px" height="360px"><br><br><p class="penulis"> Tidak sah rasanya jika kita bertandang ke Kota Bukittinggi tanpa melihat dan mengabadikan bangunan yang menjadi simbol kota ini, Jam Gadang. Bangunan peninggalan era Hindia-Belanda tersebut seakan identik dengan kota yang dahulu pernah menjadi ibukota Provinsi Sumatera Barat ini. Terbukti, perjalanan waktu selama puluhan tahun tidak membuat monumen ini dilupakan oleh warga Bukittinggi. Bahkan, menara jam ini terus menjadi kebanggaan mereka dan terpampang di berbagai jenis souvenir khas kota ini.</p><p class="penulis">Jam Gadang didirikan oleh Pemerintah Hindia-Belanda atas perintah dari Ratu Wilhelmina dari Belanda. Jam ini merupakan hadiah bagi sekretaris (controleur) Kota Bukittinggi (Fort de Kock) yang menjabat saat itu yakni HR Rookmaaker. Konstruksi bangunan menara jam ini dibangun oleh arsitek asli Minangkabau, Jazid Rajo Mangkuto Sutan Gigi Ameh. Pembangunannya secara resmi selesai pada tahun 1926 dengan menghabiskan dana mencapai 3.000 Gulden.</p><p class="penulis">Monumen Jam Gadang berdiri setinggi 26 meter di tengah Taman Sabai Nan Aluih, yang dianggap sebagai patokan titik sentral (titik nol) Kota Bukittinggi. Konstruksinya tidak menggunakan rangka logam dan semen, tetapi menggunakan campuran batu kapur, putih telur, dan pasir. Bangunan Jam Gadang memiliki 4 tingkat. Tingkat pertama merupakan ruangan petugas, tingkat kedua tempat bandul pemberat jam. Sementara pada tingkat ketiga merupakan tempat dari mesin jam dan tingkat keempat merupakan puncak menara dimana lonceng jam ditempatkan. Pada lonceng di puncak tersebut tertera nama dari produsen mesin jam ini. Atap berbentuk gonjong di puncak menara yang kini dapat kita saksikan bukanlah bentuk asli dari bangunan tersebut pada masa awal pendiriannya. Desain awal puncak Jam Gadang berbentuk bulat bergaya khas Eropa, dengan patung ayam jantan di bagian atasnya.</p><p class="penulis"> Memasuki era pendudukan Jepang, atap Jam Gadang dirubah mengikuti gaya arsitektur Jepang. Saat era kemerdekaan tiba, atap tersebut dirombak kembali menjadi bentuk atap bagonjong yang merupakan ciri khas dari arsitektur bangunan asli Minangkabau. Mesin jam yang digunakan di dalam monumen ini merupakan barang langka yang hanya diproduksi dua unit oleh pabrik Vortmann Recklinghausen, Jerman. Unit kedua yang setipe dengannya hingga kini masih digunakan dalam menara jam legendaris Kota London, Inggris, yaitu Big Ben. Sistem yang bekerja di dalamnya menggerakkan jam secara mekanik melalui dua bandul besar yang saling menyeimbangkan satu sama lain. Sistem tersebut membuat jam ini terus berfungsi selama bertahun-tahun tanpa sumber energi apapun.</p><p class="penulis">Mesin yang berada di lantai tiga ini menggerakkan jarum jam yang menghadap keempat penjuru mata angin. Diameter masing-masing area perputaran jarum jam tersebut adalah 80 centimeter. Seluruh angka jam dibuat menggunakan sistem penomoran Romawi, akan tetapi angka empat ditulis dengan cara diluar kelaziman, yaitu dengan empat huruf ‘I’ (IIII) dan bukan dengan tulisan ‘IV’. Hal ini menjadi salah satu daya tarik yang menimbulkan rasa penasaran bagi para wisatawan yang berkunjung ke kota ini.</p><br> </div></div>';
+            }
+
+            Div.innerHTML =html;
+        }
+
+
+    </script>
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        a{
+            color:inherit;
+        }
+        .head{
+            padding: 5px 0;
+            background: linear-gradient(to right, #F1220A, #098FDC);
+            margin-bottom: 40px;
+        }
+        .head ul li{
+            display: inline-block;
+        }
+        .cont{
+            width: 80%;
+            margin:0 auto;
+            color: #fff;
+        }
+        .cont a {
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 40px;
+        }
+        .cont ul li:hover {
+            color: red;
+        }
+        .gambar{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+        }
+        .foto {
+            
+            margin:15px;
+        }
+        .foto a{
+            padding: 10px;
+            color: #fff;
+            background: linear-gradient(to right, #F4C534, #F434F4);
+            text-decoration: none;
+        }
+        .artikel {
+            width: 1200px;
+            margin: auto;
+        }
+        .penulis {
+            font-family: sans-serif;
+            color: #5C5C5C;
+        }
+        .atas{
+            color: #098FDC;
+            text-align: left;
+        }
+        .konten {
+            width: 1200px;
+        }
+        .left {
+            width: 750px;
+            float:left;
+            padding: 70px;
+            text-align: justify;
+            margin-top: -80px;
+        }
+
+        .kembali {
+            background-color: #098FDC;
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 10px;
+        } 
+    </style>
+</head>
+<body onLoad="ShowPage(1);">
+    <div class="head">
+        <div class="cont">
+            <h1>WISATA SUMATERA BARAT</h1> 
+            <ul>
+               <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+               <li><a href="galeri.html"><i class="fas fa-camera"></i></i> GALERI</a></li>
+           </ul>
+        </div>
+    </div>
+    <div id="halaman"></div>
+</body>
+</html>
